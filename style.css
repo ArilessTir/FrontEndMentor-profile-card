@@ -16,6 +16,10 @@ body{
     height: 100vh;
     overflow: hidden;
     background-color: var(--dark-cyan);
+    background-image: url('images/bg-pattern-top.svg'),
+                      url('images/bg-pattern-bottom.svg');
+    background-position: bottom 50vh right 50vw, top 50vh left 50vw;
+    background-repeat: no-repeat;
     position: relative;
     font-family: 'Kumbh Sans', sans-serif;
     display: flex;
@@ -23,20 +27,7 @@ body{
     justify-content: center;
 }
 
-.bg-img{
-    position: absolute;
-    z-index: -1;
-}
 
-.top{
-    top:-50%;
-    left:5%
-}
-
-.bottom{
-    bottom:-50%;
-    right:5%
-}
 
 
 .card{

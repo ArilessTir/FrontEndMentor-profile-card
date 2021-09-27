@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+:root{
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%)
+}
+
+body{
+    height: 100vh;
+    overflow: hidden;
+    background-color: var(--dark-cyan);
+    position: relative;
+    font-family: 'Kumbh Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-img{
+    position: absolute;
+    z-index: -1;
+}
+
+.top{
+    top:-50%;
+    left:5%
+}
+
+.bottom{
+    bottom:-50%;
+    right:5%
+}
+
+
+.card{
+    width: 20rem;
+    height: 25rem;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+}
+
+.bg-card{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+
+.bg-id {
+    position: absolute;
+    height: 8rem;
+    width: 8rem;
+    background-color: white;
+    border-radius: 50%;
+    border: 8px solid white;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-image: url('images/image-victor.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.personal-info{
+    text-align: center;
+    margin-top: 100px;
+    width: 100%;
+}
+
+.personal-info h3{
+    margin-top: 10px;
+    font-weight: 100;
+}
+
+.personal-info::after{
+    content: '';
+    height: 1px;
+    width: 100%;
+    display: inline-block;
+    background-color: black;
+    opacity: 0.1;
+    margin-top: 20px;
+}
+
+
+
+.social-info {
+width: 100%;
+text-align: center;
+margin: auto;
+}
+
+.social-info ul{
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-item{
+    list-style-type: none;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+.followers::after{
+    content: 'Followers';
+    display: block;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.likes::after{
+    content: 'Likes';
+    display: block;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.photos::after{
+    content: 'Photos';
+    display: block;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
